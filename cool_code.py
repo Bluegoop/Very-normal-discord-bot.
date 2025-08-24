@@ -48,8 +48,9 @@ async def spam_text_coz_y_not(interaction: discord.Interaction, userid: str, mes
     channel = client.get_channel(channel_id)
 
     for i in range(number_of_times):
-        await channel.send(f"<@{userid}> message")
+        await channel.send(f"<@{userid}> {message}")
         print(f"Message {i} has been sent.")
 
 
 client.run(token)
+
